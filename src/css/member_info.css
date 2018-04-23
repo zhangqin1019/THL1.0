@@ -1,0 +1,68 @@
+﻿/* CSS Document */
+@charset "utf-8";
+/* 公共css */
+*{margin:0; padding:0;/*transition: all 0.2s linear 0s;*/}
+a img{border:none;}
+img{vertical-align: middle;}
+a{cursor:pointer; text-decoration:none;}
+a:focus{ outline:none;}
+a,a:link {text-decoration: none;}
+a:hover {text-decoration:none;}
+ul, ol, li{list-style:none;white-space:normal;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+.clear{display:block; float:none; clear:both; height:0; width:100%;overflow:hidden;}
+body{font-family:"Microsoft YaHei","微软雅黑",Arial, Helvetica, sans-serif; background-color:#fff;color: #000;margin: 0;padding: 0;}
+/* css */
+.member_info{background-color: #fff;min-width: 1050px;} 
+.member_info .menber_f1:after {clear: both;content: "";display: table;}
+.member_info .menber_f1{background-color: #f2f9ff;margin:20px 20px;border: 1px solid #58b9fd;padding:20px;font-size: 14px;min-width: 327px;}
+.member_info .menber_f1_lt{float: left;height: 22px; line-height: 22px;margin-right: 7px;}
+.member_info .menber_f1_rt{float: left;height: 22px; line-height: 22px;}
+.member_info .menber_f2:after {clear: both;content: "";display: table;}
+.member_info .menber_f2 h3{font-weight:bold;border-bottom: 2px #8acffb solid;padding-bottom: 8px;}
+.member_info .menber_f2 h3 span{margin: 0 0 0px 10px;}
+.member_info .menber_f2 ul:after {clear: both;content: "";display: table;}
+.member_info .menber_f2 ul{margin: 20px;}
+.member_info .menber_f2 ul li{float: left;margin-right: 50px;font-size: 14px;}
+.member_info .menber_f2 ul li input{margin-right: 10px;}
+.menber_all{width: 98%;margin: 0 auto;margin-top: 30px;}
+.menber_all .menber_box .menber_form{padding: 10px 0 30px 0;margin:10px 0 30px 0;}
+.menber_all .menber_box .menber_form:hover{background-color: #f2f9ff;*background-color: #fff;}
+.menber_all .menber_box .menber_form:after {clear: both;content: "";display: table;}
+.menber_all .menber_box .menber_form p{width: 50%;*width: 49%;float: left; min-width: 444px;margin: 18px 0 10px 0;}
+.menber_all .menber_box .menber_form p:after {clear: both;content: "";display: table;}
+.menber_all .menber_box .menber_form p span{display: block;float: left;width:150px;text-align: right;margin-top:4px;}
+.menber_all .menber_box .menber_form p b{display: block;float: left;position: relative;}
+.menber_all .menber_box .menber_form p strong{font-weight: normal;color:#c00;font-size: 12px;position: absolute;left: 0;top:33px;}
+.menber_all .menber_box .menber_form p input{float: left;width: 288px;border: 1px solid #cccccc;height: 28px;line-height: 28px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;padding:0 6px;}
+.menber_all .menber_box .menber_form p textarea{float: left;width: 288px;border: 1px solid #cccccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;height: 128px;resize: none;padding:0 6px;}
+.menber_all .menber_box .menber_form p select{float: left;width:302px;border: 1px solid #cccccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;height: 28px;}
+.menber_all .menber_box .menber_form p.w_100{width: 100%;}
+.menber_all .menber_box .menber_form p.menber_select{}
+.menber_all .menber_box .menber_form p.menber_select select{margin-right: 30px; width: 188px;}
+.menber_all .menber_box .menber_form p .menber_span{width: auto;padding: 0 5px;}
+.menber_all .menber_box .menber_form .menber_pay select{width: 90px;}
+.menber_all .menber_box .menber_form .menber_pay input{width: 90px;}
+.menber_all .menber_box .menber_form .menber_sui{position: relative;}
+.menber_all .menber_box .menber_form .menber_sui input{width: 100px;height: 26px;cursor: pointer;}
+.menber_all .menber_box .menber_form .menber_sui a{float: left; display: block;width: 100px;height: 26px;background-color: #eeeeee; border: 1px solid #cccccc;line-height: 26px;color: #666666;text-align: center;margin-right: 30px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.menber_all .menber_box .menber_form .menber_sui_file{position: absolute;top:0px;left: 150px;filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0;  opacity: 0;width: 88px!important; }
+.menber_all .menber_box .menber_form  .form_delect{margin: 12px 0 0 12px;}
+.menber_all .menber_prompt{margin-bottom: 30px;}
+.menber_all .menber_prompt p{ color: #58b9fd;font-size: 12px;}
+.menber_all .menber_button{width: 250px;margin:40px auto;} 
+.menber_all .menber_button:after {clear: both;content: "";display: table;}
+.menber_all .menber_button input{background: none;width: 100px;border: none;color: #fff;height: 38px;font-size: 16px;cursor: pointer;font-family:"Microsoft YaHei","微软雅黑",Arial, Helvetica, sans-serif;}
+.menber_all .menber_button .menber_button_lt{ float: left;text-align: center;background-color: #58b9fd;color: #fff;}
+.menber_all .menber_button .menber_button_rt{float: right;text-align: center;background-color: #6eca5e;color: #fff;}
+/*财务审核*/
+.financial{background-color: #fff;min-width: 1050px;}
+.menber_all .menber_box h3{font-weight:bold;border-bottom: 2px #8acffb solid;padding-bottom: 8px;}
+.menber_all .menber_box h3 span{margin: 0 0 0px 10px;}
+.menber_all .menber_box .check-menber{padding: 10px 0 30px 0;margin:10px 0 30px 0;}
+.menber_all .menber_box .check-menber:hover{background-color: #f2f9ff;*background-color: #fff;}
+.menber_all .menber_box .check-menber:after{clear: both;content: "";display: table;}
+.menber_all .menber_box .check-menber p{width: 50%;*width: 49%;float: left; min-width: 444px;margin: 18px 0 10px 0;}
+.menber_all .menber_box .check-menber p input{margin: 0px 15px;vertical-align: middle;}
+.menber_all .menber_box .check-menber p span{padding-right: 15px;}
+.menber_all .menber_box .check-menber p textarea{width: 288px;border: 1px solid #cccccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;height: 128px;resize: none;padding:0 6px;vertical-align: middle;}

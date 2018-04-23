@@ -1,0 +1,71 @@
+.u-l-box{
+	margin-top:14px;
+	padding: 94px 44px 0 44px;
+	float: right;
+	width: 352px;
+	background-color: #fff;
+	text-align: center;
+}
+.u-l-box p{
+	font-size: 18px;
+	color: #58b9fd;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.f-text span{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;	
+	top: 8px;
+	left: 12px;
+}
+.username span{
+	background: url(../images/userIcon.png) no-repeat 0 -20px;
+}
+.userpwd span{
+	background: url(../images/userIcon.png) no-repeat 0 0;
+}
+.btn-wrap{
+	margin-top: 30px;
+}
+.btn-wrap input{
+	float: left;
+	width: 152px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	background-color: #faa600;
+}
+.btn-wrap input:hover{
+	background-color: #d68e01;
+}
+input.log-s-btn{
+	background-color: #58b9fd;
+	margin-left: 42px;
+}
+input.log-s-btn:hover{
+	background-color: #4491c6;
+}
+.clc-wrap{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 142px;
+}
+.clc-wrap a{
+	font-size: 14px;
+	color: #b2b2b2;
+	display: inline-block;
+}
+.clc-wrap a:hover{
+	color: #535151;
+}
+.catest{
+	margin: 0 40px;
+}
+.pwd_space{
+    word-spacing: 10px;
+}

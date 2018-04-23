@@ -1,0 +1,65 @@
+
+.list-content{margin: 10px;background-color: #fff;min-width: 1100px;border:1px solid #a9dcff;}
+/*页面头部样式*/
+.table-title{height: 44px;line-height: 44px;border-bottom: 1px solid #a9dcff;background-color: #e6f0fc;}
+.title-left{float: left;color: #58b9fd;font-size: 14px;padding-left: 23px;line-height: 44px;}
+.title-left span,.title-right span{padding: 0px 5px;cursor: pointer;}
+.title-left img,.title-right img{vertical-align: middle;}
+.title-right{float: right;color:#58b9fd;font-size: 14px;padding-right: 10px;line-height: 44px;}
+/*表单样式*/
+.table-select{padding:0px;margin: 20px 0px;}
+.fm-item {float: left;margin-bottom: 10px;padding: 0px;width: 24%;line-height: 26px;}
+.item-date{width: 28%;}
+.fm-title{float: left;font-size: 14px;color: #444;text-align: right;min-width: 65px;margin-right: 20px;}
+.fm-text{float: left;line-height: 26px;height: 26px;padding: 0px;}
+.fm-sel{width:142px;height: 26px;line-height: 26px;border: 1px solid #ccc;}
+.fm-input{width:142px;line-height: 26px;height: 26px;border: 1px solid #ccc;}
+.fm-date{width: 95px;line-height: 26px;height: 26px;background: url(../images/dateIco.png) no-repeat 77px center;border: 1px solid #ccc;}
+.fm-btn{text-align: center;}
+.btn-wrap input{
+    margin-right: 15px;
+}
+/*会员审核列表样式*/
+.table-left .fm-item{width:28%;}
+.table-left .fm-left{margin-left: 50px;}
+
+
+/*lin*/
+.table-all{width: 97%; margin: 10px auto 0 auto;}
+.table-all .fm-item{padding-left: 10px;width: 24%;margin-bottom: 15px;}
+.table-all .fm-title{width: 25%;min-width:auto;height: 26px;/*overflow:hidden;*/text-overflow:ellipsis;-o-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;white-space:nowrap;}
+.table-all .fm-text{width: 60%;}
+.table-all .fm-input{width: 100%;}
+.table-all .table-f2{margin-bottom: 15px;}
+.table-all .table-f2-time{width: 28%;float: left;}
+.table-all .table-f2-time span{float: left;color: #444;height: 26px;line-height: 26px;}
+.table-all .table-f2-time span.table-f2-box{border: #cccccc 1px solid; background-color: #fff;width: 30%;cursor: pointer;}
+.table-all .table-f2-time span.table-f2-titile{width: 23%;text-align: right;margin-right: 20px;font-size: 14px;}
+.table-all .table-select{margin-bottom: 5px;*margin-bottom: 25px;}
+.table-all .table-f2-time select{float: left;height: 28px; line-height: 28px;width: 38%;padding: 0 2%; padding: 0\9;*margin-top: 3px;}
+.table-all .table-f2-place{width: 35%;}
+.table-all .table-f2-place span.table-f2-titile{width: 22%;}
+.table-all .table-f2-place span.table-f2-box{width: 15%;text-align: center;font-size: 14px;}
+.table-all .table-f2-place select{width: 21%;}
+.table-all .table-f2-mar{width: 35%;}
+.table-all .table-f2-mar span.table-f2-titile{width: 10.5%;}
+.table-all .table-f3{margin: 0px 0 20px 0;}
+.table-all .table-f3 ul:after{clear: both;content: "";display: table;}
+.table-all .table-f3 ul {margin-top: 4px;}
+.table-all .table-f3 ul li{font-size: 14px;float: left;margin-right: 20px;color: #444;white-space: nowrap;}
+.table-all .table-f3 ul li label{height: 20px; line-height: 20px;float: left;}
+.table-all .table-f3 ul li input{position: relative; top: 2px;margin-right: 3px;}
+.table-all .table-f3 .table-f2-time{width: 100%;float: left;}
+.table-all .table-f3 .table-f2-time span.table-f2-titile{width: 6.5%;}
+.table-f4{text-align: center};
+.table-all2{background-color: #fff;border: 1px solid #fff;}
+.table-all2 .fm-item select{float: left;height: 28px; line-height: 28px;width: 100%;padding: 0 2%; padding: 0\9;*margin-top: 3px;}
+.table-all2 .fm-text span{float: left;color: #444;height: 26px;line-height: 26px;}
+.table-all2 .fm-text span.table-f2-box{border: #cccccc 1px solid; background-color: #fff;width: 43%;cursor: pointer;}
+.table-all2 .fm-100 span.table-f2-box{width: 100%;}
+.table-all2 .fm-text span.table-f2-titile{width: 23%;text-align: right;margin-right: 20px;}
+.checked_tr{background-color:#e1f1fd!important;}
+.mar_rt{position: relative;top: 1px;}
+.page-loading{width: 300px;height: 150px;margin: 0 auto;margin-top: 45px;padding-bottom: 45px;display: none;}
+.page-loading .loading-pic{width: 88px;height: 88px;margin: 0 auto;margin-bottom: 14px;}
+.page-loading p{ text-align: center;}

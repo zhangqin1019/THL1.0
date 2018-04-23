@@ -1,0 +1,145 @@
+.log-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+/*注册登录头部*/
+.log-header>div{
+    padding-top: 45px;
+}
+.log-header {
+    height: 130px;
+    background: url('../images/l-building.png') no-repeat center bottom;
+    width: 100%;
+    background-size: contain;
+    background-color: #fff;
+}
+.log-header img {
+    float: left;
+    width: 95px;
+    padding-top: 12px;
+}
+
+.log-letter {
+    font-size: 13px;
+    word-spacing: 2px;
+}
+
+.log-name {
+    font-size: 24px;
+    letter-spacing: 13px;
+}
+
+.log-wrap {
+    float: left;
+    margin-left: 20px;
+    color: #060606;
+}
+/*页面背景图*/
+.log-banner{
+    height: 618px;
+    background: url('../images/banner.png') no-repeat center top;
+}
+.log-banner>.log-container{
+    background: url('../images/banner.png') no-repeat center top;
+}
+.banner-name{
+    font-size: 30px;
+    color: #fff;
+}
+.banner-letter{
+    font-size: 18px;
+    color: #fff;
+}
+.banner-txt{
+    font-size: 22px;
+    color: #fff;
+    margin-top: 26px;
+    word-spacing: 18px;
+}
+.b-t-box{
+    float: left;
+    width: 436px;
+    text-align: center;
+    margin-left: 40px;
+    padding-top: 126px;
+}
+/*页面底部*/
+.log-footer{
+    background-color: #fff;
+    padding: 90px 0 22px 0;
+}
+.log-footer p{
+    text-align: center;
+    font-size: 12px;
+    color: #9e9e9e;
+}
+.log-footer p a{
+    color: #67befd;
+    margin: 0 4px;
+}
+.f-title {
+    float: left;
+    margin-top: 6px;
+    font-size: 16px;
+    text-align: right;
+    color: #b2b2b2;
+    margin-right: 6px;
+    width: 66px;
+}
+
+.f-text {
+    float: left;
+    position: relative;
+}
+
+.f-text input,.f-text select{
+    box-sizing: border-box;
+    outline: none;
+    width: 276px;
+    *width: 236px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666666;
+    font-family: "微软雅黑";
+}
+.f-text input:focus,.f-text select:focus{
+    border-color: #58b9fd;
+}
+/*取消下拉箭头*/
+.f-text select::-ms-expand{
+    display: none;
+}
+.f-text select{
+    /* Chrome */
+    -webkit-appearance: none;
+    /* Firefox */
+    -moz-appearance: none;
+    height: 38px;
+    *height: 25px;
+    /*line-height: 38px;*/
+    padding-left: 10px;
+    background: url('../images/down_arrow.png') no-repeat 250px center;
+}
+/*登录框*/
+.u-l-box>.f-item input{
+    padding: 8px 0 8px 40px;
+}
+.u-l-box>.f-item{
+    margin-top: 24px;
+}
+/*注册框*/
+.u-s-box>.f-item{
+    margin-top: 16px;
+}
+.u-s-box .f-title{
+    width: 94px;
+    color: #666666;
+}
+.u-s-box .f-text{
+    position: relative;
+}
+.u-s-box>.f-item input{
+    padding: 6px 10px;
+}

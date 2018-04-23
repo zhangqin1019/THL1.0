@@ -1,0 +1,15 @@
+.web{width: 800px;height: 100%;margin:80px auto;}
+.web-left{float: left;width: 554px;}
+.web-right{float: left;margin-left: 50px;width: 130px;margin-top: 150px;}
+.web-left p{color: #6ea6be;font-size: 24px;margin: 10px 0px 0px 0px;padding: 0px;}
+.web-right .btn{width: 125px;height: 50px;line-height: 50px;border-radius: 3px;color: #fff;font-size: 16px;text-align: center;margin-top: 30px;}
+/*404页面样式*/
+.right{text-align: right;font-style: italic;}
+.btn-blue{background-color: #58b9fd;}
+.btn-red{background-color: #e35a53;}
+/*505页面样式*/
+.web-content{width:600px;}
+.left-width{width: 375px;margin-top: 30px;}
+.right-width{margin-top: 60px;margin-left: 70px;}
+.center{font-style: italic;text-align:center;}
+.btn-green{background-color: #6eca5e;}

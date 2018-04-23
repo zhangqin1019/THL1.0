@@ -1,0 +1,20 @@
+.member-top{margin:0px auto;height:60px;background-color: #fff;}
+.member-title{width: 1022px;height:60px;background-color: #fff;margin:0px auto;}
+.mem-lt{float: left;}
+.mem-lt img{vertical-align: middle;margin-top: 14px;}
+.mem-rt{float: right;}
+.mem-rt a{display: inline-block;height: 60px;line-height: 60px;font-size: 14px;color: #444;}
+.mem-rt span{color: #cdcdcd;padding: 0px 5px;}
+.member-type{width: 1002px;margin: 60px auto 180px auto;background-color: #fff;min-height: 550px;padding: 0px 10px;}
+.member-type h3{font-size: 28px;color: #444;padding:24px 0px;text-align: center;border-bottom: 1px solid #ddd;font-weight: normal;}
+.member-type p{font-size: 20px;color: #444;padding: 44px 0px 28px 65px;}
+.mem-ct a{display: inline-block;width: 246px;height: 188px;position: relative;}
+.mem-ct a span{position: absolute;left: 20px;bottom: 15px;color: #fff;font-size: 18px;}
+.mem-ct .mem-med{background: url(../images/mun-med.png) no-repeat;margin-left: 65px;}
+.mem-ct .mem-man{background: url(../images/mun-manu.png) no-repeat;margin:0px 66px;}
+.mem-ct .mem-dis{background: url(../images/mun-dis.png) no-repeat;}
+.mem-at{width: 875px;height: 40px;line-height: 40px;font-size: 14px;color: #e35a53;border:1px solid #eddada;background-color: #fff9f9;margin:60px 0px 0px 65px;border-radius: 5px;}
+.mem-at i{display: inline-block;width: 16px;height: 16px;background: url(../images/mem-alert.png) no-repeat;vertical-align: middle;margin-left: 20px;}
+.member-foot{min-width: 1022px;margin:0px auto 30px auto;}
+.member-foot p{font-size: 12px;color: #3c3c3c;text-align: center;}
+.member-foot p a{color: #2ba8d6;}

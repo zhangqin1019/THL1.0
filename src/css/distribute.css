@@ -1,0 +1,10 @@
+.distribute{background-color: #fff;margin: 10px;min-width: 1100px;border:1px solid #a9dcff;}
+.distribute h2{height:44px;line-height:44px;font-size: 14px;color: #58b9fd;padding-left: 25px;font-weight: normal;border-bottom: 1px solid #a9dcff;background-color: #e6f0fc;}
+.distribute h2 img{vertical-align: middle;}
+.distribute h2 span{padding-left: 5px;}
+.distribute-content{width:100%;margin:64px auto 0px;text-align: center;}
+.list-table{margin: 0px auto 60px;border: 1px solid #a9dcff;}
+.list-table tr td{border-bottom: 1px solid #a9dcff;border-right: 1px solid #a9dcff;padding: 10px 15px;font-size: 14px;color: #666;text-align: left;}
+.list-table tr td.odd{background-color: #f9f9f9;min-width: 132px;}
+.list-table tr td.even{background-color: #fff;min-width: 178px;}
+.distribute-content .goback{width: 110px;height: 36px;line-height: 36px;color: #fff;background-color: #6eca5e;font-size: 14px;border-radius: 4px;margin-bottom: 40px;}

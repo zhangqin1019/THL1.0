@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>权限管理</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/authority.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/menutree.js"></script>
+	<script type="text/javascript" src="../js/public.js"></script>
+</head>
+<body>
+	<div class="treemenu">
+		<div class="treemenu-title">
+			<img src="../images/dahao.png"/>
+			<span>用户管理&nbsp;&gt;&nbsp;权限管理</span>
+		</div>
+		<ul class="treenav">
+			<li><a class="treenav_cur" href="JavaScript:;">买方</a></li>
+			<li><a href="JavaScript:;">卖方</a></li>
+			<li><a href="JavaScript:;">配送方</a></li>
+			<li><a href="JavaScript:;">卖方</a></li>
+		</ul>
+		<div class="treemenu-content fixed">
+
+<!-- 			<div class="f-item fixed">
+				<div class="f-title">角色名称</div>
+				<div class="f-text">
+					<select class="f-sel input-pub">
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="f-item fixed">
+				<div class="f-title">描述</div>
+				<div class="f-text">
+					<input type="text" class="f-input input-pub" />
+				</div>
+			</div> -->
+			<div class="f-tree fixed">
+				<!-- <div class="f-title">权限选择</div> -->
+				<div class="f-text menu-text">
+					<div class="tree">
+						<ul id="rootUL"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="treemenu-btn">
+			<input type="button" class="btn-bg" value="一键删除"/>
+			<input type="button" class="btn-bg" value="保存"/>
+		</div>
+	</div>
+	<!-- 弹出层开始 -->
+	<div class="win_bg"></div>
+	<div class="win_alert">
+		<h3>编辑<b>模块名称</b><a class="win_close" href="JavaScript:;">x</a></h3>
+		<div class="alert_con">
+			<ul class="create_type">
+				<li><label><input type="radio">创建文件夹</label></li>
+				<li><label><input type="radio">文件</label></li>
+				<li><label><input type="radio">创建文件夹</label></li>
+			</ul>
+			<table class="edit_table">
+				<tbody>
+					<tr class="edit_name">
+						<td class="edit_f1"><input  type="text" value="模块名称"/></td>
+						<td class="edit_f2">
+							<input id="cheakbox_val" type="hidden" value=""/>
+							<input  type="text" placeholder="模块路径"/>
+						</td>
+						<td><a class="edit_add" href="JavaScript:;"><span>添加子层</span></a></td>
+					</tr>
+					<!-- <tr class="edit_name">
+						<td class="edit_f1"><input type="text" placeholder="子层模块名称"/></td>
+						<td class="edit_f2"><input  type="text" placeholder="新模块路径"/></td>
+						<td><a class="edit_del" href="JavaScript:;"><span>删除</span></a></td>
+					</tr>	 -->
+				</tbody>
+			</table>
+		</div>
+		<div class="edit_submit"><button>保存</button></div>
+	</div>
+</body>
+</html>

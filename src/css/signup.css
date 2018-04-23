@@ -1,0 +1,130 @@
+.u-s-box{
+	margin-top:14px;
+	padding: 20px 28px 0 28px;
+	float: right;
+	width: 384px;
+	background-color: #fff;
+	text-align: center;
+}
+.u-s-box p{
+	font-size: 18px;
+	color: #58b9fd;
+	text-align: center;
+	margin-bottom: 6px;
+}
+/*密码强度*/
+
+#level {
+    position: relative;
+}
+
+.pw-bar {
+    background: url(../images/pwd_check.png) no-repeat 0 -16px;
+    height: 16px;
+    overflow: hidden;
+    width: 251px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.pw-bar-on {
+    background: url(../images/pwd_check.png) no-repeat 0 0;
+    width: 0px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    transition: width .4s ease-in;
+    -moz-transition: width .4s ease-in;
+    -webkit-transition: width .4s ease-in;
+    -o-transition: width .4s ease-in;
+}
+
+.pw-weak .pw-defule {
+    width: 0px;
+}
+
+.pw-weak .pw-bar-on {
+    width: 83px;
+}
+
+.pw-medium .pw-bar-on {
+    width: 167px;
+}
+
+.pw-strong .pw-bar-on {
+    width: 251px;
+}
+
+.f-text span{
+	color: red;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	display: block;
+	width: 5px;
+	height: 5px;
+}
+
+#f-check input{
+	width: 132px;
+	*width:118px;
+	float: left
+}
+#f-check img{
+	float: left;
+	margin: 2px 0 0 10px;
+}
+#f-check span{
+	left: 120px;
+}
+p.remind{
+	color: #999999;
+	font-size: 14px;
+}
+.remind span{
+	color: red;
+}
+.btn-wrap{
+	width: 356px;
+	margin: 10px auto 15px auto;
+}
+.btn-wrap input{
+	float: left;
+	width: 152px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	background-color: #58b9fd;
+}
+.btn-wrap input:hover{
+	background-color: #448ec2;
+}
+input.log-s-btn{
+	background-color: #6eca5e;
+	margin-left: 50px;
+}
+input.log-s-btn:hover{
+	background-color: #4d8d42;
+}
+
+#pwd{
+	margin-top: 0;
+	height: 24px;
+}
+#pwd .f-title{
+	font-size: 14px;
+}
+.f-tip{
+	line-height: 14px;
+	margin-top: 6px;
+	font-size: 12px;
+	color: #999999;
+	padding-left: 16px;
+	text-align: left;
+	background: url('../images/pwdremind.png') no-repeat left center;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>创建合同</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css" />
+    <link rel="stylesheet" type="text/css" href="../css/manhuaDate.1.0.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/newdist.css" />
+</head>
+<!-- start 创建合同-->
+
+<body>
+    <form class="agree_main">
+        <div class="f-t-box">
+            <div>
+                <img src="../images/dahao.png"/>
+                <span>添加合同列表&nbsp;&gt;&nbsp;创建</span>
+            </div>
+        </div>
+        <div class="f-cont">
+            <div class="f-item fixed">
+                <div class="f-title">合同发起方</div>
+                <div class="f-text">
+                    <select class="input-pub">
+                     <option>11</option>
+                    </select>
+                </div>
+                <div class="f-title">合同签收方</div>
+                <div class="f-text">
+                    <select class="input-pub">
+                     <option>11</option>
+                    </select>
+                </div>
+            </div>
+            <div class="f-item fixed">
+                <div class="f-title">会员编号</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub">
+                </div>
+                <div class="f-title">合同编号</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub">
+                </div>
+            </div>
+            <div class="f-item fixed">
+                <div class="f-title">开始时间</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub time" readonly="true">
+                </div>
+                <div class="f-title">结束时间</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub time" readonly="true">
+                </div>
+            </div>
+            <div class="f-item fixed">
+                <div class="f-title">合同类型</div>
+                <div class="f-text">
+                    <select class="input-pub">
+                     <option></option>
+                    </select>
+                </div>
+                <div class="f-title">被授权人签名</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub">
+                </div>
+            </div>
+            <div class="f-item fixed">
+                <div class="f-title">追加合同</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub">
+                </div>
+                <div class="f-title">项目名称</div>
+                <div class="f-text">
+                    <input type="text" class="input-pub">
+                </div>
+            </div>
+            <div class="f-item fixed">
+                <div class="f-title">备注</div>
+                <div class="f-text single">
+                    <textarea class="input-pub"></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                <input type="button" value="添加药品信息">
+                <input type="button" value="创建合同" class="btn-return">
+            </div>
+        </div>
+    </form>
+</body>
+<!-- end 创建合同-->
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/manhuaDate.1.0.js"></script>
+<script type="text/javascript">
+    $(function(){
+		$("input.time").manhuaDate({
+			Event: "click", //可选    
+			Left: 0, //弹出时间停靠的左边位置
+			Top: -16, //弹出时间停靠的顶部边位置
+			fuhao: "-", //日期连接符默认为-
+			isTime: false, //是否开启时间值默认为false
+			beginY: 1949, //年份的开始默认为1949
+			endY: 2100//年份的结束默认为2049
+		});    
+    })
+</script>
+</html>

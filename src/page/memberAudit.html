@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>会员审核列表</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/complaintList.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/manhuaDate.1.0.css"/>
+	<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/manhuaDate.1.0.js"></script>
+	<script type="text/javascript">
+	// 日历时间
+	$(function () {
+		$("input.fm-date").manhuaDate({
+			Event: "click", //可选    
+			Left: 0, //弹出时间停靠的左边位置
+			Top: -16, //弹出时间停靠的顶部边位置
+			fuhao: "-", //日期连接符默认为-
+			isTime: false, //是否开启时间值默认为false
+			beginY: 1949, //年份的开始默认为1949
+			endY: 2100//年份的结束默认为2049
+		});
+	});
+	$(function(){
+	// 表格选中背景变灰色
+		$(".listd-table input").on("click",function(){
+			if($(this).is(':checked')) {
+				$(this).closest("tr").addClass("checked_tr");
+			}else{
+				$(this).closest("tr").removeClass("checked_tr");
+			}
+		});
+	//点击分页按钮背景变蓝色
+		$(".num-page .num-click").click(function(){
+			$(this).addClass("page-bg");
+			$(this).siblings().removeClass("page-bg");
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="list-content">
+		<div class="table-title fixed">
+			<div class="title-left">
+				<img src="../images/dahao.png"/>
+				<span>会员审核列表</span>
+			</div>
+			<div class="title-right">
+				<img src="../images/refresh.png"/>
+				<span onclick="javascript:location.reload(false);">刷新</span>
+			</div>
+		</div>
+		<div class="table-select table-left fixed">
+			<div class="fm-item fixed">
+				<div class="fm-title fm-left">会员类型</div>
+				<div class="fm-text">
+					<select class="fm-sel input-pub">
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="fm-item fixed">
+				<div class="fm-title">审核状态</div>
+				<div class="fm-text">
+					<select class="fm-sel input-pub">
+						<option>请选择</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="table-select table-left fixed">
+			<div class="fm-item fixed">
+				<div class="fm-title fm-left">企业名称</div>
+				<div class="fm-text">
+					<input type="text" class="fm-input input-pub"/>
+				</div>
+			</div>
+			<div class="fm-item fixed">
+				<div class="fm-title">创建时间</div>
+				<div class="fm-text">
+					<input type="text" class="fm-date input-pub" readonly="true"/>&nbsp;-&nbsp;
+					<input type="text" class="fm-date input-pub" readonly="true"/>
+				</div>
+			</div>
+			<div class="fm-item fixed">
+					<input type="button" class="btn-query" value="查询"/>
+			        <input type="button" class="btn-pub" value="清空条件"/>	
+			</div>
+		</div>
+		<table class="listd-table">
+				<tr>
+					<th>选择</th>
+					<th>审核编号</th>
+					<th>会员类型</th>
+					<th>企业名称</th>
+					<th>账号名称</th>
+					<th>创建时间</th>
+					<th>审核状态</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"/></td>
+					<td>01229358634596</td>
+					<td>一级</td>
+					<td>广州清科灵医药有限公司</td>
+					<td>GZqklyiyao2017</td>
+					<td>2016-11-03</td>
+					<td>否</td>
+					<td><a href="#">审批</a></td>
+				</tr>
+		</table>
+		<div class="page-number fixed">
+			<div class="page-num">
+				<p>每页显示<select><option>15</option></select></p>
+			</div>
+			<div class="num-page">
+				<div class="pages">
+					<a href="#">首页</a>
+					<a href="#">上一页</a>
+					<a href="#" class="page-bg num-click">1</a>
+					<a href="#" class="num-click">2</a>
+					<a href="#" class="num-click">3</a>
+					<a href="#" class="num-click">4</a>
+					<a href="#" class="num-click">...</a>
+					<a href="#" class="num-click">65</a>
+					<a href="#">下一页</a>
+					<a href="#">末页</a>
+				</div>
+				<div class="page-record">
+					<p>共26条记录，第1/3页</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

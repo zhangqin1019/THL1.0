@@ -1,0 +1,26 @@
+﻿/* CSS Document */
+@charset "utf-8";
+/* 公共css */
+*{margin:0; padding:0;/*transition: all 0.2s linear 0s;*/}
+a img{border:none;}
+img{vertical-align: middle;}
+a{cursor:pointer; text-decoration:none;}
+a:focus{ outline:none;}
+a,a:link {text-decoration: none;}
+a:hover {text-decoration:none;}
+ul, ol, li{list-style:none;white-space:normal;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+.clear{display:block; float:none; clear:both; height:0; width:100%;overflow:hidden;}
+body{font-family:"Microsoft YaHei","微软雅黑",Arial, Helvetica, sans-serif;color: #000;margin: 0;padding: 0;}
+/* css */
+.calender{ width:245px;margin:50px auto;top:0;left:0;border:4px #8acffb solid;border-radius:6px;background:#fff;position:absolute;display:none;z-index:999;}
+.calendertb{width:100%;}
+.calendertb td{width:30px;height:30px;border-radius:3px;text-align:center;vertical-align:middle;cursor:pointer;font-size:14px;font-weight:bold;}
+.calendertb td.hover,.calendertb td.weekendhover{background:#D6D6D6;}
+.calendertb th{width:30px;height:30px;border-top:1px #CCCCCC solid;text-align:center;vertical-align:middle;cursor:pointer;color:#58b9fd;}
+.tdtoday{background:#58b9fd;color:#fff;}
+.getyear{height:35px;line-height:35px;width:100%;text-align:center;}
+.preMonth{ font-size:14px;font-weight:bold;cursor:pointer;margin-right:18px;color:#0080FF;}
+.nextMonth{ font-size:14px;font-weight:bold;cursor:pointer;margin-left:18px;color:#0080FF;}
+.mh_date{width:92%;height:16px;line-height:16px;padding:5px 0px 5px 5px;border:none;cursor:pointer;background:url(../images/dateIco.png) no-repeat right center;}
+.zhezhao{width:100%;height:100%;position:fixed;z-index:998;background:#fff;filter:alpha(opacity=10);opacity:0.1;display:none;}

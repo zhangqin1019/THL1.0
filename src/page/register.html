@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>注册页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	<style type="text/css">html,body{background-color: #f3f3f3;}</style>
+</head>
+<body>
+<div class="member-top">
+	<div class="member-title fixed">
+		<div class="mem-lt">
+			<a href="#"><img src="../images/mun-title.png"/></a>
+		</div>
+		<div class="mem-rt">
+			<a href="#">帮助</a>
+			<span>|</span>
+			<a href="#">在线客服</a>
+		</div>
+	</div>
+</div>
+<div class="member-reg">
+	<div class="register">
+		<h3>会员注册</h3>
+		<div class="fm-item fixed">
+			<div class="fm-title">用户账户</div>
+			<div class="fm-text">
+				<input type="text" placeholder="建议至少使用两种方式的组合" class="fm-input input-pub"/>
+			</div>
+		</div>
+		<div class="fm-item fixed">
+			<div class="fm-title">设置密码</div>
+			<div class="fm-text" id="pass">
+				<input type="password" placeholder="请输入密码" class="fm-input input-pub"/>
+				<div class="pass-level fixed">
+					<span>密码强度</span>
+					<div class="pass-bar" id="level">
+						<div class="pass"></div>
+						<div class="pass-on"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fm-item fixed">
+			<div class="fm-title">密码确认</div>
+			<div class="fm-text">
+				<input type="password" placeholder="请再次输入密码" class="fm-input input-pub"/>
+			</div>
+		</div>
+		<div class="fm-item fixed">
+			<div class="fm-title">Email</div>
+			<div class="fm-text">
+				<input type="text" placeholder="请输入常用email地址" class="fm-input input-pub"/>
+			</div>
+		</div>
+		<div class="fm-item fixed">
+			<div class="fm-title">手机号码</div>
+			<div class="fm-text">
+				<input type="text" placeholder="请输入常用手机号码" class="fm-input input-pub"/>
+			</div>
+		</div>
+		<div class="fm-item fixed">
+			<div class="fm-title">验证码</div>
+			<div class="fm-text test-item fixed">
+				<input type="text" placeholder="请输入验证码" class="fm-test input-pub"/>
+				<div class="test-type"><img src="../images/reg-test.png"/></div>
+			</div>
+		</div>
+		<div class="fm-item fixed">
+			<div class="fm-title">手机验证码</div>
+			<div class="fm-text test-item fixed">
+				<input type="text" placeholder="请输入手机验证码" class="fm-test input-pub"/>
+				<div class="test-type test-tel">获得验证码</div>
+			</div>
+		</div>
+		<div class="fm-server fixed">
+			<input type="radio" />
+			<a href="#">阅读并同意&lt;&lt;THL用户协议及隐私政策&gt;&gt;</a>
+		</div>
+		<div class="fm-sumbit">
+			<input type="sumbit" value="注册"/>
+		</div>
+	</div>
+</div>
+<div class="member-foot">
+	<p>Copyright © 2014-2016 By<a href="#">广东省药品交易中心</a>All Rights Reserved.</p>
+</div>
+</body>
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript">
+	// 密码强弱检测
+	$(function () {
+	    function changeClass() {
+	        $('#level').removeClass('pw-weak').removeClass('pw-medium').removeClass('pw-strong');
+	    }
+	    $('#pass input').keyup(function () {
+	        var strongRegex = new RegExp("^(?=.{12,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g"),//大小写字母加数字加特殊字符 12位
+	            mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g"),
+	            enoughRegex = new RegExp("(?=.{8,}).*", "g"),
+	            textValue = $(this).attr('value');
+	        if (false == enoughRegex.test(textValue)) {
+	            changeClass();
+	            $('#level').addClass(' pw-defule');
+	        } else if (strongRegex.test(textValue)) {
+	            changeClass();
+	            $('#level').addClass(' pw-strong');
+	        } else if (mediumRegex.test(textValue)) {
+	            changeClass();
+	            $('#level').addClass(' pw-medium');
+	        } else {
+	            changeClass();
+	            $('#level').addClass('pw-weak');
+	        }
+	    });
+	});
+</script>
+</html>

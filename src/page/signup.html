@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>注册会员</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pubuserForm.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/signup.css"/>
+</head>
+
+<body>
+    <!-- start 注册页面 -->
+    <div class="log-header">
+        <div class="log-container fixed">
+            <img src="../images/logo.png">
+            <div class="log-wrap">
+                <p class="log-name">众思药品电子交易平台管理系统</p>
+                <p class="log-letter">ZHONGSI MEDICINE ELECTRONIC TRADING PLATFORM MANAGEMENT SYSTEM</p>
+            </div>
+        </div>
+    </div>
+    <div class="log-banner">
+        <div class="log-container fixed">
+            <div class="b-t-box">
+                <p class="banner-name">众思药品电子交易平台交易系统</p>
+                <p class="banner-letter">ZHONGSI MEDICINE E- TRADING PLATFORM</p>
+                <p class="banner-txt">公平 公开 公正</p>
+            </div>
+            <div class="u-s-box">
+                <p>用户注册</p>
+                <div class="f-item fixed">
+                    <div class="f-title">登录账户：</div>
+                    <div class="f-text">
+                        <input type="text" placeholder="请输入用户名"/>
+                        <span>*</span>
+                    </div>
+                </div>
+                <div class="f-item fixed">
+                    <div class="f-title">登录密码：</div>
+                    <div class="f-text" id="pass">
+                        <input type="password" placeholder="请输入密码"/>
+                        <span>*</span>
+                        <div class="f-tip">包括字母和数字，至少8个字符，不包括空格</div>
+                    </div>
+                </div>
+                <div class="f-item fixed" id="pwd">
+                    <div class="f-title">密码强度：</div>
+                    <div class="f-text" id="level">
+                        <div class="pw-bar"></div>
+                        <div class="pw-bar-on"></div>
+                    </div>
+                </div>
+                <div class="f-item fixed">
+                    <div class="f-title">密码确认：</div>
+                    <div class="f-text">
+                        <input type="password"/>
+                        <span>*</span>
+                    </div>
+                </div>
+                <div class="f-item fixed">
+                    <div class="f-title">密保问题：</div>
+                    <div class="f-text">
+                        <select>
+                            <option>你喜欢的动物</option>
+                        </select>
+                        <span>*</span>
+                    </div>
+                </div>
+                <div class="f-item fixed">
+                    <div class="f-title">密保答案：</div>
+                    <div class="f-text">
+                        <input type="text"/>
+                        <span>*</span>
+                    </div>
+                </div>
+                <div class="f-item fixed">
+                    <div class="f-title">验证码：</div>
+                    <div class="f-text fixed" id="f-check">
+                        <input type="text"/>
+                        <span>*</span>
+                        <img src="../images/checknum.png">
+                    </div>
+                </div>
+                <p class="remind">带<span>*</span>为用户必填项</p>
+                <div class="btn-wrap fixed">
+                    <input type="submit" name='resgit' value="注册会员"/>
+                    <input type="button" name='return' value="返回首页" class="log-s-btn"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="log-footer">
+        <p>Copyright © 2014-2016 By<a href="javascript:void(0)">广东省药品交易中心</a>All Rights Reserved.</p>
+    </div>
+    <!-- end 注册页面 -->
+</body>
+<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../js/signup.js"></script>
+</html>

@@ -1,0 +1,19 @@
+.member-top{margin:0px auto;height:60px;background-color: #fff;}
+.member-title{width: 1022px;height:60px;background-color: #fff;margin:0px auto;}
+.mem-lt{float: left;}
+.mem-lt img{vertical-align: middle;margin-top: 14px;}
+.mem-rt{float: right;}
+.mem-rt a{display: inline-block;height: 60px;line-height: 60px;font-size: 14px;color: #444;}
+.mem-rt span{color: #cdcdcd;padding: 0px 5px;}
+.member-type{width: 1022px;min-height: 512px;margin: 60px auto 180px auto;background-color: #fff;}
+.mem-ct{width: 1022px;padding:105px 0px 80px 0px;}
+.mem-ct a{display: inline-block;width: 246px;height: 188px;position: relative;}
+.mem-ct a span{position: absolute;left: 20px;bottom: 15px;color: #fff;font-size: 18px;}
+.mem-ct .mem-med{background: url(../images/mem-trad.png) no-repeat;margin-left: 65px;}
+.mem-ct .mem-man{background: url(../images/mem-turn.png) no-repeat;margin:0px 66px;}
+.mem-ct .mem-dis{background: url(../images/mem-out.png) no-repeat;}
+.mem-at{text-align: center;}
+.mem-at a{font-size: 16px;color: #9b9b9b;text-decoration: underline;}
+.member-foot{min-width: 1022px;margin:0px auto 30px auto;}
+.member-foot p{font-size: 12px;color: #3c3c3c;text-align: center;}
+.member-foot p a{color: #2ba8d6;}

@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>添加合同列表</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/complaintList.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/manhuaDate.1.0.css"/>
+	<script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/manhuaDate.1.0.js"></script>
+	<script type="text/javascript">
+	// 日历时间
+	$(function () {
+		$("input.mh_date").manhuaDate({
+			Event: "click", //可选    
+			Left: 0, //弹出时间停靠的左边位置
+			Top: -16, //弹出时间停靠的顶部边位置
+			fuhao: "-", //日期连接符默认为-
+			isTime: false, //是否开启时间值默认为false
+			beginY: 1949, //年份的开始默认为1949
+			endY: 2100//年份的结束默认为2049
+		});
+	});
+	$(function(){
+	// 表格选中背景变灰色
+		$(".listd-table input").on("click",function(){
+			if($(this).is(':checked')) {
+				$(this).closest("tr").addClass("checked_tr");
+			}else{
+				$(this).closest("tr").removeClass("checked_tr");
+			}
+		});
+	// 表格全选_取消全选
+		$(".listd-table input:checkbox").attr("checked", false);//初始化,载入取消全选
+		$(".listd-table .mar_rt").on("click",function(){
+			if($(this).is(':checked')) {
+				$(".listd-table input:checkbox").attr("checked", true);
+			}else{
+				$(".listd-table input:checkbox").attr("checked", false);
+			}
+		});
+		$("#delect_input").on("click",function(){
+			if (window.confirm("确认删除吗?")) {
+				$(".listd-table tbody input:checked").each(function() {
+		            n = $(this).parents("tr").index();  // 获取checkbox所在行的顺序
+		            $(".listd-table tbody").find("tr:eq("+n+")").remove();
+		        });
+			} 
+		});
+		//点击分页按钮背景变蓝色
+		$(".num-page .num-click").click(function(){
+			$(this).addClass("page-bg");
+			$(this).siblings().removeClass("page-bg");
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="list-content">
+		<div class="table-title fixed">
+			<div class="title-left">
+				<img src="../images/dahao.png"/>
+				<span>添加合同列表</span>
+			</div>
+			<div class="title-right">
+				<img src="../images/refresh.png"/>
+				<span onclick="javascript:location.reload(false);">刷新</span>
+			</div>
+		</div>
+		<div class="table-all table-all2">
+			<div class="table-select fixed">
+				<div class="fm-item fixed">
+					<div class="fm-title">合同编号</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同状态</div>
+					<div class="fm-text">
+						<select class="input-pub">
+							<option>请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">开始时间</div>
+					<div class="fm-text fm-100">
+						<span class="table-f2-box"><input type="text" class="mh_date" readonly="true" /></span>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">创建时间</div>
+					<div class="fm-text fm-100">
+						<span class="table-f2-box"><input type="text" class="mh_date" readonly="true" /></span>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">合同类型</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">追加合同</div>
+					<div class="fm-text">
+						<select class="input-pub">
+							<option>请选择</option>
+						</select>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">结束时间</div>
+					<div class="fm-text fm-100">
+						<span class="table-f2-box"><input type="text" class="mh_date" readonly="true" /></span>
+					</div>
+				</div>
+				<div class="fm-item fixed">
+					<div class="fm-title">所在区域</div>
+					<div class="fm-text">
+						<input type="text" class="fm-input input-pub"/>
+					</div>
+				</div>
+			</div>
+			<p class="table-f4">
+					<input type="button" class="btn-query" value="查询"/>
+			</p>
+			<p class="btn-wrap">
+				<input type="button" class="btn-pub" value="批量签名"/>
+				<input type="button" class="btn-pub" value="批量发送"/>
+				<a href="JavaScript:;" onclick="parent.$('.create_agree',parent.document).trigger('click')">
+					<input type="button" class="btn-pub" value="创建合同"/>
+				</a>
+			</p>
+		</div>
+		<table class="listd-table">
+				<tr>
+					<th><input type="checkbox" class="mar_rt"/></th>
+					<th>合同ID</th>
+					<th>合同状态</th>
+					<th>产品编号</th>
+					<th>追加合同</th>
+					<th>项目名称</th>
+					<th>企业地址</th>
+					<th>会员编号</th>
+					<th>创建时间</th>
+					<th>创建人</th>
+					<th>备注</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>01230693</td>
+					<td>新建合同</td>
+					<td></td>
+					<td>无</td>
+					<td>合同签订项目</td>
+					<td>广州番禺大道北555号天安科技园</td>
+					<td></td>
+					<td>2017-01-31 15:12:11</td>
+					<td>林林林</td>
+					<td></td>
+					<td style="width:192px;"><a href="#">发送合同</a><a href="#">撤销合同</a><a href="#">查看合同</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>01230693</td>
+					<td>新建合同</td>
+					<td></td>
+					<td>无</td>
+					<td>合同签订项目</td>
+					<td>广州番禺大道北555号天安科技园</td>
+					<td></td>
+					<td>2017-01-31 15:12:11</td>
+					<td>林林林</td>
+					<td></td>
+					<td style="width:192px;"><a href="#">发送合同</a><a href="#">撤销合同</a><a href="#">查看合同</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>01230693</td>
+					<td>新建合同</td>
+					<td></td>
+					<td>无</td>
+					<td>合同签订项目</td>
+					<td>广州番禺大道北555号天安科技园</td>
+					<td></td>
+					<td>2017-01-31 15:12:11</td>
+					<td>林林林</td>
+					<td></td>
+					<td style="width:192px;"><a href="#">发送合同</a><a href="#">撤销合同</a><a href="#">查看合同</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>01230693</td>
+					<td>新建合同</td>
+					<td></td>
+					<td>无</td>
+					<td>合同签订项目</td>
+					<td>广州番禺大道北555号天安科技园</td>
+					<td></td>
+					<td>2017-01-31 15:12:11</td>
+					<td>林林林</td>
+					<td></td>
+					<td style="width:192px;"><a href="#">发送合同</a><a href="#">撤销合同</a><a href="#">查看合同</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" /></td>
+					<td>01230693</td>
+					<td>新建合同</td>
+					<td></td>
+					<td>无</td>
+					<td>合同签订项目</td>
+					<td>广州番禺大道北555号天安科技园</td>
+					<td></td>
+					<td>2017-01-31 15:12:11</td>
+					<td>林林林</td>
+					<td></td>
+					<td style="width:192px;"><a href="#">发送合同</a><a href="#">撤销合同</a><a href="#">查看合同</a></td>
+				</tr>
+		</table>
+		<div class="page-number fixed">
+			<div class="page-num">
+				<p>每页显示<select><option>15</option></select></p>
+			</div>
+			<div class="num-page">
+				<div class="pages">
+					<a href="#">首页</a>
+					<a href="#">上一页</a>
+					<a href="#" class="page-bg num-click">1</a>
+					<a href="#" class="num-click">2</a>
+					<a href="#" class="num-click">3</a>
+					<a href="#" class="num-click">4</a>
+					<a href="#" class="num-click">...</a>
+					<a href="#" class="num-click">65</a>
+					<a href="#">下一页</a>
+					<a href="#">末页</a>
+				</div>
+				<div class="page-record">
+					<p>共26条记录，第1/3页</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

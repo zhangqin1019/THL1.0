@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>众思药品电子交易平台</title>
+<link rel="stylesheet" type="text/css" href="css/public.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/popbox.css"/>
+<script type="text/javascript" src="js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="js/fun.js"></script>
+</head>
+<body id="y_body">
+<!-- 头部条start -->
+<div class="y_top">
+    <div class="y_top_logo">
+        <div class="logo_lt"><img src="images/logo2.png"></div>
+        <div class="logo_rt">
+            <h3>众思药品电子交易平台管理系统</h3>
+            <p>ZHONGSI  MEDICINE ELECTRONIC TRADING PLATFORM MANAGEMENT SYSTEM</p>
+        </div>
+    </div>
+    <div class="y_login">
+        <div class="y_pic"><img src="images/login_pic.png"></div>
+        <div class="y_name">
+            <p>u002888-中山市医药有限公司-（配送方会员)，您好！</p>
+            <p>欢迎您的登录<span id="time_now">，今天是0000年00月00日，星期0</span></p>
+        </div>
+        <div class="y_login_on">
+            <div class="y_login_j"><img src="images/login_j.png"></div>
+            <div class="y_login_on-f1">
+                <div class="y_login_on-f1_lt"><img src="images/login_pic.png"></div>
+                <div class="y_login_on-f1_rt">
+                    <p><span>Admin</span></p>
+                    <p>已登录2小时15分</p>
+                </div>
+            </div>
+            <div class="y_login_on-f2">
+                <span>账号：管理员</span>  
+                <a href="javascript:void(0);" id="pw-modal">修改密码</a>
+            </div>
+            <div class="y_login_on-f3">
+                <a class="y_login_lt" href="#">注销</a> 
+                <a href="#">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 头部条end -->
+<div class="y_main">
+    <div class="y_lt">
+        <div class="list-menu">
+            <ul class="dropdown">
+                <li>
+                    <a href="#">部分页面</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/complaintList.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>投诉列表</span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/member_info.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>会员注册信息页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/financial-audit.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>财务审核页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/authority.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>管理权限</span>
+                            </a>
+                        </li>
+                        <li style="display:none;">
+                            <a href="javascript:void(0);" class="add-html newdist_agree" data-href="page/newdist_agree.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>新建配送协议</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/memberAudit.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>会员审核列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/detail_query.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>订单明细查询</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/protocol.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>配送协议列表</span>
+                            </a>
+                        </li>
+                        <li style="display:none;">
+                            <a href="javascript:void(0);" class="add-html create_agree" data-href="page/create_agree.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>创建合同</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/account_list.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>账号列表</span>
+                            </a>
+                        </li>
+                        <li style="display:none;">
+                            <a href="javascript:void(0);" class="add-html distributeAgree" data-href="page/distributeAgree.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>配送协议详情</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="add-html" data-href="page/contract.html">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>添加合同列表</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">药品合同管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">合同列表</a>
+                            <ul>
+                                <li>
+                                    <a href="#">议价挂牌合同列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">基药合同列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">非基药合同列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">药品合同明细</a>
+                        </li>
+                        <li>
+                            <a href="#">廉洁合同列表</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">药品订单管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">响应订单</a>
+                        </li>
+                        <li>
+                            <a href="#">订单明细查询</a>
+                        </li>
+                        <li>
+                            <a href="#">退货管理</a>
+                            <ul>
+                                <li>
+                                    <a href="#">发货明细查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">逾期未响应列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">药品发票管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">药品发票管理</a>
+                            <ul>
+                                <li>
+                                    <a href="#">创建发票</a>
+                                </li>
+                                <li>
+                                    <a href="#">取消与修改发票</a>
+                                </li>
+                                <li>
+                                    <a href="#">普通发票信息查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">货票同行发票查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">配送发票管理</a>
+                            <ul>
+                                <li>
+                                    <a href="#">发票信息查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">投诉管理</a>
+                    <ul>
+                        <li>
+                            <a href="#">投诉列表</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="y_rt">
+        <div class="tab_title_wrap">
+            <a href="javascript:void(0);" class="tab_t_btnl"><</a>
+            <a href="javascript:void(0);" class="tab_t_btnr">></a>
+            <div id="tab_title">
+                <ul class="tab_title_ul"></ul>
+            </div>
+        </div> 
+        <div class="y_iframe" id="show_pape" >
+            <!-- <iframe class="tab_iframe" src="page.html" name="main" frameborder="0" width="100%" height="100%"></iframe> -->
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/libs/require.js" data-main="js/home"></script>
+</html>

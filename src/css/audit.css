@@ -1,0 +1,26 @@
+.audit{width: 1082px;height: 100%;margin: 0px auto;}
+.audit-content{width: 1082px;height: 432px;margin:20px auto;background-color: #f2f9ff;border:2px solid #c3e6fe;}
+.roat{margin-top: 45px;text-align: center;position: relative;}
+.text{margin-top: 30px;}
+.text h3{font-size: 18px;color:#2a2a2a;text-align: center;margin:0px;padding-bottom: 30px;}
+.text p{font-size: 16px;color: #b4b4b4;text-align: center;margin:0px;padding: 0px;}
+.text p span{font-size: 16px;color:#353535;}
+.audit-btn{margin-top: 30px;margin-bottom:20px;text-align: center;}
+.audit-btn .btn{width: 100px;height:36px;line-height: 36px;color: #fff;border-radius: 3px;font-size: 16px;}
+.audit-btn .btn-blue{background-color: #58b9fd;margin-right: 50px;}
+.audit-btn .btn-red{background-color: #e35a53;}
+/*审核失败样式*/
+.roat-fail{background:url(../images/audit-fail.png) no-repeat center 50px;}
+.text .left{text-align: left;margin-left: 330px;}
+.roat-fail p{padding: 0px; margin: 0px;color: #e35a53;font-size: 16px;position: absolute;left: 500px;top: 125px;}
+.roat-fail img{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0); transform:translate3d(0,0,0);-webkit-animation:play 3s linear infinite;-moz-animation:play 3s linear infinite;animation:play 3s linear infinite;}
+@-webkit-keyframes play{0%  { -webkit-transform:rotate(0deg);}100% {-webkit-transform:rotate(360deg);}}
+@-moz-keyframes play{0%  {-moz-transform:rotate(0deg);}100% {-moz-transform:rotate(360deg);}}
+@keyframes play{0%  {transform:rotate(0deg);}100% { transform:rotate(360deg);}}   
+/*审核中样式*/
+.roat-audit{background: url(../images/audit.png) no-repeat center 25px;}
+.roat-audit p{padding: 0px; margin: 0px;color: #58b9fd;font-size: 16px;position: absolute;left: 510px;top: 120px;}
+.roat-audit img{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0); transform:translate3d(0,0,0);-webkit-animation:play 3s linear infinite;-moz-animation:play 3s linear infinite;animation:play 3s linear infinite;}
+@-webkit-keyframes play{0%  { -webkit-transform:rotate(0deg);}100% {-webkit-transform:rotate(360deg);}}
+@-moz-keyframes play{0%  {-moz-transform:rotate(0deg);}100% {-moz-transform:rotate(360deg);}}
+@keyframes play{0%  {transform:rotate(0deg);}100% { transform:rotate(360deg);}}

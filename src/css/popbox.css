@@ -1,0 +1,113 @@
+/*拖动改变窗口大小的八个地方的样式*/
+.resizable-e {position: absolute;top: 0;right: -2px;height: 100%;width: 5px;cursor: e-resize;}
+.resizable-s {position: absolute;bottom: -2px;left: 0;height: 5px;width: 100%;cursor: s-resize;}
+.resizable-w {position: absolute;top: 0;left: -2px;height: 100%;width: 5px;cursor: w-resize;}
+.resizable-n {position: absolute;top: -2px;left: 0;height: 5px;width: 100%;cursor: n-resize;}
+.resizable-en {position: absolute;top: -2px;right: -2px;height: 5px;width: 5px;cursor: ne-resize;}
+.resizable-es {position: absolute;bottom: -2px;right: -2px;height: 5px;width: 5px;cursor: se-resize;}
+.resizable-ws {position: absolute;bottom: -2px;left: -2px;height: 5px;width: 5px;cursor: sw-resize;}
+.resizable-wn {position: absolute;top: -2px;left: -2px;height: 5px;width: 5px;cursor: nw-resize;}
+/*弹窗关闭按钮样式*/
+.close-pos-r-t {position: absolute;right:-10px;top:-10px;width:24px;height:24px;line-height:24px;font-weight:bold;font-size:14px;color:#97cbff;background: url(../images/close-btn.png) no-repeat;text-align: center;vertical-align: middle;}
+.close-pos-r-t:hover{color: #58b9fd;}
+.modal-close {cursor: pointer;}
+/*以下是关于修改密码弹出样式*/
+.password-content{width: 454px;height: 380px;background-color: #fff;text-align: center;border-radius: 10px;}
+.password-content h2{font-size: 18px;font-weight: bold;color: #58b9fd;padding: 14px 0px;margin-bottom: 16px;background-color: #ecf5ff;border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.fm-item{line-height: 50px;}
+.fm-title{float: left;font-size: 14px;color: #666;text-align: right;width: 110px;margin-right: 10px;}
+.fm-text{float: left;position: relative;}
+.fm-text input{width: 252px;line-height: 34px;height:34px;color: #ccc;border:1px solid #eaebeb;margin-top: 7px;}
+.fm-text label.error{display:block;line-height:18px;font-size:12px;color:#e35a53;text-align: left;}
+/*.fm-text .error i{display: inline-block;width: 16px;height: 16px;line-height: 16px;background:url(../images/password_icon.png) no-repeat -64px 0px;vertical-align: middle;}*/
+.fm-pass{line-height: 30px;}
+.btn-save{width: 120px;height: 38px;line-height: 38px;font-size: 14px;background-color: #58b9fd;color: #fff;margin-top: 15px;border-radius: 3px;}
+.iconfont{display: inline-block;width: 32px;height: 32px;line-height: 32px;position: absolute;right: 5px;top: 10px;}
+.fpass{background:url(../images/password_icon.png) no-repeat 0px 0px;}
+.npass{background:url(../images/password_icon.png) no-repeat -34px 0px;}
+#level{position: relative;}
+.pass-bar{background:url(../images/pwd_check.png) no-repeat 0px -16px;height: 16px;overflow: hidden;width: 251px;position: absolute;left: 0px;top: 8px;}
+.pass-baron{background:url(../images/pwd_check.png) no-repeat 0px 0px;width: 0px;height: 16px;position: absolute;top: 8px;left: 0px;transition: width .4s ease-in;-moz-transition: width .4s ease-in;-webkit-transition: width .4s ease-in;-o-transition: width .4s ease-in;}
+.pw-weak .pw-defule {width: 0px;}
+.pw-weak .pass-baron {width: 83px;}
+.pw-medium .pass-baron {width: 167px;}
+.pw-strong .pass-baron {width: 251px;}
+/*新增账号弹窗*/
+.add-number{width: 350px;height: 345px;background-color: #fff;border-radius: 10px;}
+.add-number h2{font-size: 16px;color: #58b9fd;background-color: #ecf5ff;line-height: 36px;text-align: center;border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.add-content{width: 350px;padding: 24px 0px 0px 0px;}
+.add-content .fm-item{padding: 0px;margin-bottom: 10px;line-height: 26px;}
+.add-content .fm-item label{font-size:14px;color:#444;display:inline-block;min-width: 75px;text-align: right;margin-right: 8px;}
+.add-content .fm-item input{width: 214px;height: 26px;line-height: 26px;border: 1px solid #e7eaec;vertical-align: middle;}
+.add-content .fm-item textarea{width: 214px;height: 38px;border: 1px solid #e7eaec;vertical-align: middle;}
+.add-content .fm-item label.error{display:block;line-height:18px;font-size:12px;color:#e35a53;padding-left: 80px;text-align: left;}
+/*.add-content .fm-tip{line-height: 18px;height: 18px;padding-left: 80px;margin:5px 0px;font-size: 12px;color: #444;}
+.add-content .fm-tip i{display: inline-block;width: 16px;height: 16px;line-height: 16px;vertical-align: middle;}
+.add-content .fm-tip .through{background: url(../images/th-true.png) no-repeat;}
+.add-content .fm-tip .unthrough{background: url(../images/through.png) no-repeat;}*/
+.add-number .save{width:70px;height: 30px;line-height: 30px;background: #58b9fd;color: #fff;font-size: 14px;border-radius: 4px;margin-left: 142px;}
+/*dmy*/
+/*角色改变弹窗*/
+.pop_box{
+    background-color: #fff;
+    width: 265px;
+    text-align: center;
+    border-radius: 10px;
+}
+.pop_box h2{
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    color: #58b9fd;
+    background-color: #ecf5ff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.pop_box p{
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+.pop_box p span{
+    font-size: 14px;
+    color: #444444;
+    padding-right: 5px;
+}
+.pop_box p select{
+    width: 165px;
+    height: 30px;
+}
+.pop_box input[type="button"]{
+    width: 70px;
+    height: 30px;
+    background-color: #e35a53;
+    font-size: 14px;
+    color: #fefefe;
+    border-radius: 4px;
+}
+.pop_box input[type="button"].save{
+    background-color: #58b9fd;
+    margin-left: 32px;
+}
+/*重设密码框弹窗*/
+.pop_box .pwd p{
+    margin: 0;
+}
+.pwd{
+    margin: 16px auto 0 auto;
+    width: 220px;
+}
+.pwd p{
+    text-align: left;
+    font-size: 14px;
+    color: #444444;
+}
+.pop_box .pwd input{
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+}
+.pop_box input[type="button"].pwd_save{
+    background-color: #58b9fd;
+    margin-top: 16px;
+}

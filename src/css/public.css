@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*reset.css*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,hr,fieldset,input,textarea,select,label,p,blockquote,th,td,button {/*margin:0px auto;*/ margin:0px;padding:0px;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:none;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-family: "微软雅黑";}
+.fixed:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.fixed{zoom:1;}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+::-moz-selection{background:#4ba9fa ; color:#fff;}
+::selection {background:#4ba9fa ; color:#fff;}
+/*公共样式*/
+html {background:#fff;font-family: "微软雅黑";}
+a {text-decoration:none; color:#1b191b; cursor:pointer;}
+input,button,select,textarea{font-family: "微软雅黑";outline: none;resize: none;}
+button {cursor:pointer;overflow-x:visible;border: none}
+a:hover {text-decoration: none;color: #1b191b;}
+input[type="button"],input[type="submit"]{border: none;cursor: pointer;}
+
+/*验证提示*/
+.f-tip{line-height:18px;font-size:12px;color:#666;margin-top:6px;text-align: left;}
+/*美化侧栏导航滚动条*/
+*{  
+    scrollbar-face-color:#F3F3F3; /*面子*/  
+    scrollbar-arrow-color:#C0C0C0; /*箭头*/  
+    scrollbar-3dlight-color:#C0C0C0; /*最外左*/  
+    scrollbar-highlight-color:#FFFFFF; /*左二*/  
+    scrollbar-shadow-color:#FFFFFF; /*右二*/  
+    scrollbar-darkshadow-color:#C0C0C0; /*右一*/  
+    scrollbar-track-color:#F3F3F3; /*滑道*/  
+}  
+/*滚动条整体*/  
+::-webkit-scrollbar{  
+    width:12px; /*滚动条宽度*/  
+}  
+/*滚动条按钮*/  
+::-webkit-scrollbar-button {  
+
+}  
+::-webkit-scrollbar-track{  
+    background-color:#F3F3F3;  /*滑道全部*/  
+}  
+::-webkit-scrollbar-track-piece{  
+    background-color:#F3F3F3;  /*滑道*/  
+    -webkit-border-radius:4px; /*滑道圆角宽度*/  
+}  
+::-webkit-scrollbar-thumb{  
+    background-color:#F3F3F3; /*滑动条表面*/  
+    border:solid 1px #C0C0C0; /*滑动条边框*/  
+    border-radius:4px;  /*滑动条圆角宽度*/  
+}  
+/*横竖滚动条交角*/  
+::-webkit-scrollbar-corner {  
+    background-color: #F3F3F3;  
+}  
+/*横竖滚动条交角图案*/  
+::-webkit-resizer {  
+    /*background-image: url(/public/img/resizer-inactive.png);*/  
+   background-repeat: no-repeat;  
+   background-position: bottom right;  
+}  
+/*鼠标滑过滑动条*/  
+::-webkit-scrollbar-thumb:hover{  
+    background-color:#F3F3E0;  
+}  

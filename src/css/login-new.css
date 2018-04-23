@@ -1,0 +1,34 @@
+.log_all{width: 100%;min-height:840px; background: url(../images/login_bg.jpg) no-repeat center top;}
+.log_all_warp{width: 1200px; margin: 0 auto;background: url(../images/login_bg.jpg) no-repeat center top;position: relative;} 
+.log_all_box{width: 540px;margin: 0 auto;position: absolute; top: 230px;left: 50%;right: 50%;margin-left: -265px;}  
+.log_all_f1:after{clear: both;content: "";display: table;}
+.log_all_f1{margin: 0 0 30px 0;height: 56px;}
+.log_shadow{background: url(../images/log_shadow.png) no-repeat;width: 593px;height: 120px;position: absolute;bottom: -35px;left:-28px;}
+.log_all_f2{width: 450px;margin: 0 auto;background-color: #fff;min-height: 512px;-moz-border-radius: 20px;-webkit-border-radius:20px;border-radius:20px;position: relative;padding: 40px 40px 0px 40px;} 
+.log_all_f2 p{margin-bottom: 10px;color:#666666;padding-left: 10px;}
+.log_logo{float: left;height: 56px;}
+.log_logo img{width: 114px;margin: 10px 0 0 70px;}
+.log_line{float: left;width: 1px;height: 56px;background-color: #fff;margin: 0 40px;}
+.log_name{float: left;height: 56px;color: #58b9fd;}
+.log_name h3{font-size: 30px;font-weight: normal;height: 32px;line-height: 32px;}
+.log_border{width: 442px;height: 44px; line-height: 44px;border: 3px #bcbcbc solid;-moz-border-radius: 10px;-webkit-border-radius:10px;border-radius:10px;cursor: text;}
+.log_border b{background: url(../images/username_icon.png) no-repeat;width: 25px;height: 25px;display: block;float:left;margin:11px 10px 0 10px;}
+.log_password b{background-position: 0 -33px;}
+.log_code b{background-position: 0 -68px;}
+.log_border input{float: left;width: 390px;margin: 12px 0 0 0;border: none;color:#666666;background: none;}
+.log_code .log_border{width: 280px;position: relative;}
+.log_code input{width: 230px;}
+.log_username{margin-bottom: 40px;}
+.log_password{margin-bottom: 40px;}
+.log_code_pic{position: absolute;right: -165px;top:-3px;border: 3px #bcbcbc solid;height: 44px;line-height: 44px; width: 140px;}
+.log_code_pic img{height: 44px;width:100%;cursor: pointer;}
+.is_admin{color: #666666;margin: 20px 0 0 0;padding-left: 10px;}
+.is_admin label{cursor: pointer;}
+.is_admin input{margin: 0 20px 0 44px; }
+.log_submit{width: 100%;height: 66px; line-height: 66px;background:url(../images/log_submit.png) repeat-x;margin-top: 25px;position: relative;z-index: 99;-moz-border-radius: 10px;-webkit-border-radius:10px;border-radius:10px;}
+.log_submit input{background: none;width: 100%;height: 66px;color: #fff;font-size: 18px;font-weight: bold;}
+.log_submit:hover{opacity: 0.9;}
+.log_tit{text-align: center;font-size: 24px;letter-spacing:8px;margin: 50px 0 0 0;}
+.log-footer{background-color: #fff;padding:0px 0 22px 0;}
+.log-footer p{text-align: center;font-size: 12px;color: #9e9e9e;}
+.log-footer p a{color: #67befd;margin: 0 4px;}

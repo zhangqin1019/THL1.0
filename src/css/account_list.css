@@ -1,0 +1,46 @@
+/*搜索框*/
+.a-l-box{
+    margin: 10px 10px 0 10px;
+    background-color: #fff;
+    overflow: hidden;
+    border:1px solid #a9dcff;
+}
+.a-l-header{
+    margin-left: 1.5%;
+    margin-top: 40px;
+}
+.a-l-header span{
+    font-size: 16px;
+    color: #797979;
+}
+.a-l-header i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/search.png') no-repeat left center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.a-l-header input[type="text"]{
+    width: 165px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+}
+.search-btn{
+    color: #fefefe;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #58b9fd;
+    font-size: 14px;
+    margin-left: 30px;
+}
+.table-title{height: 44px;line-height: 44px;border-bottom: 1px solid #a9dcff;background-color: #e6f0fc;}
+.title-left{float: left;color: #58b9fd;font-size: 14px;padding-left: 23px;line-height: 44px;}
+.title-left img{margin-top: -2px;}
+.title-left span,.title-right span{padding: 0px 5px;cursor: pointer;}
+.title-left img,.title-right img{vertical-align: middle;}
+.title-right{float: right;color:#58b9fd;font-size: 14px;padding-right: 10px;line-height: 44px;}
+
